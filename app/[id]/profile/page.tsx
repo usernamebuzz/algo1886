@@ -227,41 +227,6 @@ export default function ProfileDashboard() {
             </div>
           </div>
 
-          {/* Updated activity heatmap description */}
-          <div className="bg-white rounded-lg border border-slate-200 p-6">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-slate-900">최근 1년 간의 문제 기록</h3>
-              <div className="flex items-center gap-2 text-xs text-slate-600">
-                <span>적음</span>
-                <div className="flex gap-1">
-                  <div className="w-3 h-3 bg-slate-100 rounded-sm"></div>
-                  <div className="w-3 h-3 bg-green-200 rounded-sm"></div>
-                  <div className="w-3 h-3 bg-green-300 rounded-sm"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-sm"></div>
-                  <div className="w-3 h-3 bg-green-600 rounded-sm"></div>
-                </div>
-                <span>많음</span>
-              </div>
-            </div>
-
-            {/* Heatmap Grid */}
-            <div className="overflow-x-auto">
-              <div className="grid grid-cols-53 gap-1 min-w-max">
-                {heatmapData.map((day, index) => (
-                  <div
-                    key={index}
-                    className={`w-3 h-3 rounded-sm ${getHeatmapColor(day.count)}`}
-                    title={`${day.date}: ${day.count} problems`}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <p className="text-sm text-slate-600 mt-4">
-              올해 총 <strong>187</strong>개의 문제를 기록했습니다. 지난 달보다 <strong>15%</strong> 증가했습니다.
-            </p>
-          </div>
-
           {/* Skills Radar Chart */}
           <div className="bg-white rounded-lg border border-slate-200 p-6">
             <h3 className="text-lg font-semibold text-slate-900 mb-4">태그 분포</h3>
