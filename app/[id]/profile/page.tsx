@@ -3,7 +3,6 @@
 import type React from "react"
 
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import Sidebar from "@/components/sidebar"
 import { Calendar, Target, TrendingUp, Award, Star, Camera, Edit2 } from "lucide-react"
@@ -191,7 +190,7 @@ export default function ProfileDashboard() {
                   <Star className="w-5 h-5 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-slate-900">즐겨찾기</h3>
+                  <h3 className="font-semibold text-slate-900">북마크</h3>
                   <p className="text-2xl font-bold text-purple-600">42개</p>
                 </div>
               </div>
@@ -226,8 +225,6 @@ export default function ProfileDashboard() {
               <p className="text-sm text-slate-600">25문제 (13.4%)</p>
             </div>
           </div>
-
-          
         </main>
       </div>
     </div>

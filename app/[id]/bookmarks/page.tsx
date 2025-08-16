@@ -29,7 +29,7 @@ export default function BookmarksPage() {
         {/* Header */}
         <header className="bg-white border-b border-slate-200 h-[73px] flex items-center px-4">
           <div className="flex items-center justify-between w-full">
-            <h2 className="text-xl font-semibold text-slate-900">즐겨찾기 문제</h2>
+            <h2 className="text-xl font-semibold text-slate-900">북마크 문제</h2>
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-2">
                 <select className="px-3 py-1 border border-slate-200 rounded-md text-sm bg-white">

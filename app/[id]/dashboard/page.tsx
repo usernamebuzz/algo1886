@@ -7,8 +7,6 @@ import {
   TrendingUp,
   Star,
   Award,
-  BookOpen,
-  Code,
   CheckCircle,
   XCircle,
   AlertCircle,
@@ -16,7 +14,6 @@ import {
 } from "lucide-react"
 
 export default function IntegratedDashboard() {
-
   // Sample algorithm statistics
   const algorithmStats = [
     { tag: "#그래프 이론", count: 25, percentage: 36.2 },
@@ -39,7 +36,7 @@ export default function IntegratedDashboard() {
     return "bg-green-600"
   }
 
- // Sample data for the heatmap
+  // Sample data for the heatmap
   const generateHeatmapData = () => {
     const data = []
     const today = new Date()
@@ -203,7 +200,7 @@ export default function IntegratedDashboard() {
                   <Star className="w-5 h-5 text-purple-600" />
                 </div>
                 <div>
-                  <p className="text-sm text-slate-600">즐겨찾기</p>
+                  <p className="text-sm text-slate-600">북마크</p>
                   <p className="text-2xl font-bold text-purple-600">42개</p>
                 </div>
               </div>
@@ -278,7 +275,6 @@ export default function IntegratedDashboard() {
             </div>
           </div>
 
-          
           {/* Updated activity heatmap description */}
           <div className="bg-white rounded-lg border border-slate-200 p-6">
             <div className="flex items-center justify-between mb-4">
@@ -313,7 +309,7 @@ export default function IntegratedDashboard() {
               올해 총 <strong>187</strong>개의 문제를 기록했습니다.
             </p>
           </div>
-          
+
           {/* Skills Radar Chart */}
           <div className="bg-white rounded-lg border border-slate-200 p-6">
             <h3 className="text-lg font-semibold text-slate-900 mb-4">태그 분포</h3>
