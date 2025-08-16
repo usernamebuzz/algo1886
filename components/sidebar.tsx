@@ -1,4 +1,4 @@
-import { User, TrendingUp, BookOpen, Star, Settings, BarChart3, LayoutDashboard } from "lucide-react"
+import { User, TrendingUp, BookOpen, Settings, BarChart3, LayoutDashboard, Bookmark } from "lucide-react"
 import Link from "next/link"
 
 interface SidebarProps {
@@ -11,7 +11,7 @@ export default function Sidebar({ currentPage }: SidebarProps) {
     { href: "/id/record", icon: BookOpen, label: "문제 기록하기", key: "record" },
     { href: "/id/my-problems", icon: TrendingUp, label: "내가 푼 문제", key: "my-problems" },
     { href: "/id/recommended", icon: BarChart3, label: "추천 복습 문제", key: "recommended" },
-    { href: "/id/bookmarks", icon: Star, label: "즐겨찾기 문제", key: "bookmarks" },
+    { href: "/id/bookmarks", icon: Bookmark, label: "즐겨찾기 문제", key: "bookmarks" },
     { href: "/id/core-ideas", icon: Settings, label: "핵심 아이디어", key: "core-ideas" },
     { href: "/id/profile", icon: User, label: "내 정보", key: "profile" },
   ]

@@ -31,7 +31,12 @@ export default function SearchResults() {
             </h1>
           </Link>
           <div className="flex items-center gap-4">
-            <Link href="/user/record">
+          <Link href="/user/record">
+              <Button variant="outline" size="sm" className="bg-slate-100 hover:bg-slate-200">
+                풀이 기록하기
+              </Button>
+            </Link>
+            <Link href="/user/dashboard">
               <Button variant="outline" size="sm" className="bg-slate-100 hover:bg-slate-200">
                 내 알고리즘
               </Button>

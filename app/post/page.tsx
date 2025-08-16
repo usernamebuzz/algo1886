@@ -1,6 +1,6 @@
 "use client"
 
-import { Star, ExternalLink, Clock, User, Check, X } from "lucide-react"
+import { Star, ExternalLink, Clock, User, Check, X, Bookmark } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
@@ -150,8 +150,8 @@ function solution(numbers) {
               </div>
             </div>
 
-            <Button variant="ghost" size="icon" className="text-slate-400 hover:text-yellow-500">
-              <Star className="h-5 w-5" />
+            <Button variant="ghost" size="icon" className="text-slate-400 hover:text-blue-500">
+              <Bookmark className="h-5 w-5" />
             </Button>
           </div>
         </div>
